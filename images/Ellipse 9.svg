@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="709" height="709" viewBox="0 0 709 709">
+  <defs>
+    <filter id="Ellipse_9" x="0" y="0" width="709" height="709" filterUnits="userSpaceOnUse">
+      <feOffset dy="25" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_9)">
+    <g id="Ellipse_9-2" data-name="Ellipse 9" transform="translate(49.5 24.5)" fill="none" stroke="#fb3b64" stroke-width="147">
+      <circle cx="305" cy="305" r="305" stroke="none"/>
+      <circle cx="305" cy="305" r="231.5" fill="none"/>
+    </g>
+  </g>
+</svg>
