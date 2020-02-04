@@ -271,7 +271,7 @@ a:hover:not(.btn) {
   background-color: #fca0b5;
 }
 .hi-slide > .hi-prev {
-  top: 550px;
+  top: 580px;
   left: calc(50% - 70px);
 }
 
@@ -280,7 +280,7 @@ a:hover:not(.btn) {
 }
 
 .hi-slide > .hi-next {
-    top: 550px;
+    top: 580px;
     right: calc(50% - 50px);
 }
 
