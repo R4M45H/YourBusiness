@@ -228,7 +228,7 @@ a:hover:not(.btn) {
   max-width: 100vw;
   height: 100%;
   min-height: 90vh;
-  margin-bottom: 900px;
+  margin-bottom: 100px;
 }
 
 
@@ -323,69 +323,87 @@ a:hover:not(.btn) {
 }
 
 
-/* .slider {
-  margin-top: 50px;
-  min-height: 388px;
-  padding: 0 ;
-  
-}
+/*========Features=======*/
 
-.swiper-container {
+.features{
+  background-color: #F8F6F6;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 10px;
- 
+  max-width: 100vw;
+  height: 100vh;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 370px;
-  height: 500x;
-
-  border-radius: 20px;
+.features > .subtitle {
+  margin-bottom: 10px;
 }
 
-.imgBx img {
-  width: 350px;
-  height: 600px;
+.item-box{
+  width: 100%;
+  max-width: 1170px;
+  min-height: 595px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  margin-top: 30px;
+  padding: 30px 27px 37px 28px;
 
-.swiper-container {
-position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 368px;
+  min-height: 283px;
+  border-radius: 15px;
+  position: relative;
 }
-.swiper-button-next::after {
-  display: none;
+.item:hover {
+  box-shadow: 0 0px 25px 1px rgba(0, 0, 0, 0.329);
 }
-.swiper-button-prev::after {
-  display: none;
-}
-
-.swiper-button-next>i,
-.swiper-button-prev>i {
-  font-size: 2em;
-  color: #fff;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
+.item::after{
+	content: '';
+	max-width: 495px;
+	width: 98.3%; 
+	height: 9px;
+	border-bottom: 9px solid #2929cc;
+  border-radius: 50px;
+  top: 270px;
+  bottom: 0;
   position: absolute;
-}
-.swiper-button-next{
-  top: calc(50% + 300px);
-  right: calc(50% - 70px);
-  background-color: #08a6e4;
-}
-.swiper-button-prev {
-  top: calc(50% + 300px);
-  left: calc(50% - 70px);
-  background-color: #fb3864;
-}
-*/
+} 
+.item.startup::after{
+	border-bottom: 9px solid #fb3864;
+} 
+.item.social::after{
+	border-bottom: 9px solid #FFCDAC;
+} 
+.item.medal::after{
+	border-bottom: 9px solid #ffe266;
+} 
+.item.download::after{
+	border-bottom: 9px solid #58ddaf;
+} 
+.item.friend::after{
+	border-bottom: 9px solid #08a6e4;
+} 
+.item img{
+  margin-bottom: 35px;
 
+}
+.item h3{
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.item p{
+  text-align: center;
+}
 
 /*========Footer=======*/

@@ -50,11 +50,11 @@
         function autoPlay() {
             timer = setInterval(next, setting.interval);
         }
-    }
+    };
     $.fn.hiSlide = function(options) {
         $(this).each(function(index, ele) {
             slide(ele,options);
         });
         return this;
-    }
+    };
 })(jQuery);
