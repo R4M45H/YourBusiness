@@ -8,11 +8,11 @@
         };
         $.extend(true, setting, options);
         var states = [
-            { $zIndex: 1, width: 224, height: 388, top: 59, left: 20, $opacity:1 },
-            { $zIndex: 2, width: 250, height: 445, top: 35, left: 100, $opacity: 1 },
+            { $zIndex: 1, width: 224, height: 388, top: 59, left: -100, $opacity:1 },
+            { $zIndex: 2, width: 250, height: 445, top: 35, left: 50, $opacity: 1 },
             { $zIndex: 3, width:  332, height: 598, top: -50, left: 200, $opacity: 1 },
-            { $zIndex: 2, width: 250, height: 445, top: 35, left: 370, $opacity: 1 },
-            { $zIndex: 1, width: 224, height: 388, top: 59, left: 500, $opacity: 1 }
+            { $zIndex: 2, width: 250, height: 445, top: 35, left: 450, $opacity: 1 },
+            { $zIndex: 1, width: 224, height: 388, top: 59, left: 600, $opacity: 1 }
         ];
 
         var $lis = $ele.find('li');
