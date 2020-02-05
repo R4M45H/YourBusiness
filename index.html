@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="home">
+    <header class="home screen">
       <div class="container">
         <nav class="nav-menu">
           <a href="#"><img src="images/logo.svg" alt="logo"/></a>
@@ -45,7 +45,7 @@
 
     <main>
       <!-- About-->
-      <section class="about">
+      <section class="about screen">
         <h2 class="page-title">About</h2>
         <p class="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -69,14 +69,14 @@
       </section>
 
       <!-- Banner -->
-      <aside class="banner-apps">
+      <aside class="banner-apps screen">
         <h2>Get The App Now</h2>
         <a href="#"><img src="images/download-btn1.png" alt="iOS btn"/></a>
         <a href="#"><img src="images/download-btn2.png" alt="Anroid btn"/></a>
       </aside>
 
       <!-- Showcase-->
-        <section class="showcase">
+        <section class="showcase screen">
           <div class="container">
             <h2 class="page-title">Showcase</h2>
             <p class="subtitle">
@@ -98,7 +98,7 @@
           </section> 
 
       <!-- Features-->
-        <section class="features">    
+        <section class="features screen">    
           <h2 class="page-title">
             Features
           </h2>
@@ -106,7 +106,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
           
-            <div class="item-box">
+            <div class="box-items">
               <div class="item">
                 <img src="images/brush.svg" alt="brush">
                 <h3>Easy Boost</h3>
@@ -152,32 +152,217 @@
             </div>
         </section>
 
+        <!--Pricing plan-->
+        <section class="Pricing-plan screen"> 
+          <h2 class="page-title">Pricing Plan</h2>
+          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <div class="box-items">
+            <div class="card red">
+              <h3>Basic</h3>
+              <span>$0</span>
+              <p>Limited Access</p>
+              <ul>
+                <li><i class="fas fa-check green"></i>100 MB Disk Space</li>
+                <li><i class="fas fa-check green"></i>2 subdomains</li>
+                <li><i class="fas fa-check green"></i>5 Email Account</li>
+                <li><i class="fas fa-check red"></i>2 Years License</li>
+                <li><i class="fas fa-check red"></i>Phone & Mail Support</li>
+              </ul>
+              <a href="#" class="btn">Get started</a>
+            </div>
+            <div class="card blue">
+              <h3>Professional</h3>
+              <span>$25</span>
+              <p>Limited Access</p>
+              <ul>
+                <li><i class="fas fa-check green"></i>100 MB Disk Space</li>
+                <li><i class="fas fa-check green"></i>2 subdomains</li>
+                <li><i class="fas fa-check green"></i>5 Email Account</li>
+                <li><i class="fas fa-check red"></i>2 Years License</li>
+                <li><i class="fas fa-check red"></i>Phone & Mail Support</li>
+              </ul>
+              <a href="#" class="btn btn-b">Get started</a>
+            </div>
+            <div class="card green">
+              <h3>Business</h3>
+              <span>$5</span>
+              <p>Limited Access</p>
+              <ul>
+                <li><i class="fas fa-check green"></i>100 MB Disk Space</li>
+                <li><i class="fas fa-check green"></i>2 subdomains</li>
+                <li><i class="fas fa-check green"></i>5 Email Account</li>
+                <li><i class="fas fa-check red"></i>2 Years License</li>
+                <li><i class="fas fa-check red"></i>Phone & Mail Support</li>
+              </ul>
+              <a href="#" class="btn btn-g">Get started</a>
+            </div>
+          </div>
+        </section>
 
-      <footer></footer>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script src="js/jquery.hislide.min.js"></script>
-      <script src="js/jquery.hislide.js"></script>
-      <script>
-        $('.slide').hiSlide();
-      </script>
-    <!--Script for Scroll menu-->
-     <script type="text/javascript">
-      $(document).ready(function(){
-      $("#menu1").on("click","a", function (event) {
-      //отменяем стандартную обработку нажатия по ссылке
-      event.preventDefault();
-      
-      //забираем идентификатор бока с атрибута href
-      var id = $(this).attr('href'),
-      
-      //узнаем высоту от начала страницы до блока на который ссылается якорь
-      top = $(id).offset().top;
-      
-      //анимируем переход на расстояние - top за 1500 мс
-      $('body,html').animate({scrollTop: top}, 1500);
-      });
-      });
-      </script> 
+        <!--How It Works-->
+          <section class="howitworks screen">
+            
+            <h2 class="page-title">How It Works</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="howitworks-box">
+              <img src="images/howitworks1.svg" alt="phone1">
+              <img src="images/howitworks2.png" alt="elips2">
+              <div class="how how-1">
+                <span>1</span>
+                <h3>Download App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+              </div>
+              <div class="how how-2">
+                <span>2</span>
+                <h3>Signup Now</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+              </div>
+              <div class="how how-3">
+                <span>3</span>
+                <h3>Enjoy This App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+              </div>
+            </div>
+          </section>
+
+        <!-- Banner subscribe -->
+          <div class="subscribe-wrapper screen">
+            <aside class="banner-subscribe screen">
+                <h2 class="page-title">Subscribe For Our Newsletter</h2>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <form class="subscribe" action="subscribe.php">
+                    <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
+                    <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
+                      formaction="handler.php" formmethod="post" ></p>
+                  </form>
+            </aside>  
+          </div>
+
+        <!--Contact Us-->
+          <section class="contactus">
+            <h2 class="page-title">Contact Us</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="contactus-box">
+              <div class="text">
+                <h3 class="textarea-name">Any Queries?<br> Feel Free to Make a Call</h3>
+            </div>
+              <div class="form-wrapper">
+                <form class="feedback" action="contactus.php">
+                  <input type="text"  name="Name" placeholder="Name">
+                  <input type="text"  name="Email" placeholder="Email"><br>
+                  <textarea id="subject" name="subject" placeholder="Your message" ></textarea>
+                  <input class="btn btn-subscribe" type="submit" value="Send Message" 
+                  formaction="handler.php" formmethod="post">
+                </form>
+              </div>
+            </div> 
+          </section>
     </main>
-  </body>
+    <!-- <label for="subject">Any Queries?<br> Feel Free to Make a Call</label> -->
+        <!---Footer--->
+          <footer class="copyriting">
+            <div class="container">
+              <div class="copyriting-nav">
+                <div class="list">
+                  <h2>PRODUCT CATEGORIES</h2>
+                  <ul>
+                    <li><a href="#">Professional</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Consumer</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h2>PRODUCT CATEGORIES</h2>
+                  <ul>
+                    <li><a href="#">Professional</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Consumer</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h2>PRODUCT CATEGORIES</h2>
+                  <ul>
+                    <li><a href="#">Professional</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Consumer</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="social-box">
+              <div class="social-items">
+                <div class="feedback-wrapper">
+                  <div class="feedback-item">
+                    <i class="fab fa-telegram-plane"></i>
+                    <div class="social adres">
+                    <a href="#">354 Spencer Underpass, South <br>
+                      niyahfort, IA 99896-3428</a> 
+                    </div>
+                  </div>
+                  <div class="feedback-item"> 
+                    <i class="far fa-envelope"></i>
+                    <div class="social email">
+                      <a href="mailto:muel.kimone@hotmail.com">muel.kimone@hotmail.com</a> <br>
+                      <a href="mailto:johnna.orsilly@yahoo.com">johnna.orsilly@yahoo.com</a>
+                    </div>
+                  </div>
+                  <div class="feedback-item"> 
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="social phone">
+                      <a href="tel:2294696358">(229) 469-6358</a><br>
+                      <a href="tel:2263905707">(226) 390-5707</a>
+                    </div>
+                  </div>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a> 
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>     
+                  <a href="#"><i class="fab fa-instagram"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            
+          </footer>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="js/jquery.hislide.min.js"></script>
+        <script src="js/jquery.hislide.js"></script>
+        <script>
+          $('.slide').hiSlide();
+        </script>
+      <!--Script for Scroll menu-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $("#menu1").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+        
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+        
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+        });
+        });
+        </script> 
+      
+</body>
 </html>
