@@ -690,25 +690,28 @@ form.subscribe {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 15px;
- 
+
 }
 
 .contactus-box h3 {
   margin: 170px 15px 0 0;
   font-size: 2em;
   line-height: 2em;
-  font-weight: 600;  
+  font-weight: 600;
 }
-.textarea-name{
+
+.textarea-name {
   width: 100%;
   max-width: 305px;
   min-height: 81px;
 }
-form.feedback{
+
+form.feedback {
   width: 100%;
   width: 750px;
   min-height: 372px;
 }
+
 .feedback input[type=text],
 textarea {
   font-family: 'Poppins', sans-serif;
@@ -726,8 +729,6 @@ textarea {
   margin: 20px 0 16px 0;
 }
 
-
-
 .feedback input[type=text]+input[type=text] {
   margin-left: 30px;
 }
@@ -736,7 +737,6 @@ textarea {
   width: 100%;
   max-width: 743px;
   min-height: 182px;
-
 }
 
 .feedback input:focus,
@@ -753,7 +753,7 @@ textarea {
 
 /*========Footer=======*/
 
-.copyriting {
+.footer-wrapper {
   margin-top: 85px;
   width: 100%;
   max-width: 100vw;
@@ -764,11 +764,11 @@ textarea {
   padding-top: 77px;
 }
 
-.copyriting>.container {
+.footer-wrapper>.container {
   display: flex;
 }
 
-.copyriting-nav {
+.footer-nav {
   width: 100%;
   max-width: 710px;
   min-height: 258px;
@@ -777,14 +777,14 @@ textarea {
   justify-content: space-between;
 }
 
-.copyriting-nav h2 {
+.footer-nav h2 {
   font-size: 1.33em;
   line-height: 2.31em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.copyriting-nav li {
+.footer-nav li {
   list-style: none;
   font-size: 1.2em;
   line-height: 2.46em;
@@ -795,8 +795,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 115px;
-  margin-top: 5px;
+  margin:5px 0 80px 115px;
 }
 
 .social-items {
@@ -813,15 +812,11 @@ textarea {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 40px;
-}
-
-.social:nth-child(1) {
-  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .social-icons {
-  margin-top: 35px;
+  margin-top: 55px;
   font-size: 1.5em;
 }
 
@@ -856,3 +851,28 @@ textarea {
   left: calc(50% - 125px);
   position: absolute;
 }
+
+/*======Copyriting=====*/
+.copyriting{
+  width: 100%;
+  max-width: 100vw;
+  min-height: 8.75vh;
+  background-color: #071828;
+  text-align: center;
+}
+
+.copyriting p{
+ padding:30px  0;
+}
+
+.scrollup{
+  width:40px;
+  height:40px;
+  opacity:0.5;
+  position:fixed;
+  bottom:50px;
+  right:100px;
+  display:none;
+  text-indent:-9999px;
+  background: url(../images/icon_top.png) no-repeat;
+  }
