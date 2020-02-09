@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- не надо забывать заполнять title -->
     <title></title>
 
     <link rel="stylesheet" href="css/reset.css" />
@@ -16,6 +17,7 @@
     <header class="home screen" id="home">
       <div class="container">
         <nav class="nav-menu" id="menu">
+          <!-- в nav лого лишний. для нынешнего вида тогда лучше nav заменить div.navbar и ul поместить в nav -->
           <a href="#"><img src="images/logo.svg" alt="logo"/></a>
           <ul class="menu">
             <li><a href="#home">home</a></li>
@@ -28,6 +30,7 @@
           </ul>
           <a href="#" class="btn btn-login">Signup / Login</a>
         </nav>
+        <!-- по-хорошему header должен заканчиваться здесь. всегда старайся делать его коротким - лого или слоган и навигация -->
         <div class="home-content">
           <h1>It's All About Promoting Your Business</h1>
           <p>
@@ -37,6 +40,7 @@
           </p>
           <a href="#" class="btn">Download app</a>
           <a href="#" class="btn btn-b">Discover More</a>
+          <!-- в данном случае вместо картинки телефона лучше сделать фоном - будет лучше масштабироваться, круг лучше создать средствами css и оформить дополнительным фоном блока -->
           <img class="phones" src="images/phones1.png" alt="phones" />
           <img class="elips" src="images/elips.png" alt="circle" />
         </div>
@@ -46,6 +50,7 @@
     <main>
       <!-- About-->
       <section class="about screen" id="about">
+        <!-- h2 и p можно выделить в отдельный блок, т.к. постоянно повторяются на странице, так будет проще, чем задавать каждому классы -->
         <h2 class="page-title">About</h2>
         <p class="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -63,6 +68,7 @@
             consectetur adipisicing elit, sed
           </p>
           <a href="#" class="btn">Read More</a>
+          <!-- тут тоже обе картинки лучше оформить как фон -->
           <img src="images/about.png" alt="picture" />
           <img src="images/elips.png" alt="elips" />
         </div>
@@ -208,7 +214,9 @@
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             <div class="howitworks-box">
               <img src="images/howitworks1.svg" alt="phone1">
+              <!-- круг опять же лучше фоном сделать -->
               <img src="images/howitworks2.png" alt="elips2">
+              <!-- эти дивы можно было в один общий запихнуть и назначить им флекс, будет проще адаптировать под низкие разрешения, но итак неплохо -->
               <div class="how how-1">
                 <span>1</span>
                 <h3>Download App</h3>
@@ -240,6 +248,7 @@
                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   <form class="subscribe" action="subscribe.php">
+                    <!-- инпуту почты ставим type emai -->
                     <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
                     <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
                       formaction="handler.php" formmethod="post" ></p>
@@ -259,6 +268,7 @@
               <div class="form-wrapper">
                 <form class="feedback" action="contactus.php">
                   <input type="text"  name="Name" placeholder="Name">
+                  <!-- почте type=email -->
                   <input type="text"  name="Email" placeholder="Email"><br>
                   <textarea id="subject" name="subject" placeholder="Your message" ></textarea>
                   <input class="btn btn-subscribe" type="submit" value="Send Message" 
@@ -273,6 +283,7 @@
           <footer>
             <div class="footer-wrapper">
               <div class="container">
+                <!-- навигация - используем nav -->
                 <div class="footer-nav">
                   <div class="list">
                     <h2>PRODUCT CATEGORIES</h2>
