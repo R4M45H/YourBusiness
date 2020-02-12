@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <title>Your Business</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"rel="stylesheet"/>
@@ -13,35 +13,45 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="home screen" id="home">
-      <div class="container">
-        <nav class="nav-menu" id="menu">
-          <a href="#"><img src="images/logo.svg" alt="logo"/></a>
-          <ul class="menu">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#showcase">showcase</a></li>
-            <li><a href="#features">features</a></li>
-            <li><a href="#price">price</a></li>
-            <li><a href="#contact">contact</a></li>
-            <a href="#"><i class="fas fa-search"></i></a>
-          </ul>
-          <a href="#" class="btn btn-login">Signup / Login</a>
-        </nav>
-        <div class="home-content">
-          <h1>It's All About Promoting Your Business</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud
-          </p>
-          <a href="#" class="btn">Download app</a>
-          <a href="#" class="btn btn-b">Discover More</a>
-          <img class="phones" src="images/phones1.png" alt="phones" />
-          <img class="elips" src="images/elips.png" alt="circle" />
+      <header class="home screen" id="home">
+        <div class="container">
+          <div class="navbar" id="menu">
+            <a href="#"><img src="images/logo.svg" alt="logo"/></a>
+            <nav>
+              <ul class="menu">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#showcase">showcase</a></li>
+                <li><a href="#features">features</a></li>
+                <li><a href="#price">price</a></li>
+                <li><a href="#contact">contact</a></li>
+                <a href="#"><i class="fas fa-search"></i></a>
+              </ul>
+            </nav>
+            <a href="#" class="btn btn-login">Signup / Login</a>           
+          </div>
+          
+           
+          <div class="home-content">
+            
+            <h1>It's All About Promoting Your Business</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud
+            </p>
+            
+            <a href="#" class="btn">Download app</a>
+            <a href="#" class="btn btn-b">Discover More</a>
+            <!-- <div class="phones"></div>
+            <div class="ellips"></div> -->
+            <img class="phones" src="images/phones1.png" alt="phones" />
+            <img class="elips" src="images/elips.png" alt="circle" />
+          </div>
+          
         </div>
-      </div>
-    </header>
+        
+      </header>
 
     <main>
       <!-- About-->
@@ -63,7 +73,7 @@
             consectetur adipisicing elit, sed
           </p>
           <a href="#" class="btn">Read More</a>
-          <img src="images/about.png" alt="picture" />
+          <img src="images/about.png" alt="picture"/>
           <img src="images/elips.png" alt="elips" />
         </div>
       </section>
@@ -236,14 +246,16 @@
         <!-- Banner subscribe -->
           <div class="subscribe-wrapper screen">
             <aside class="banner-subscribe screen">
+                <div class="ellips-bg"></div>
                 <h2 class="page-title">Subscribe For Our Newsletter</h2>
                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   <form class="subscribe" action="subscribe.php">
-                    <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
+                    <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe" type="email"></p>
                     <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
                       formaction="handler.php" formmethod="post" ></p>
                   </form>
+                  
             </aside>  
           </div>
 
@@ -273,7 +285,7 @@
           <footer>
             <div class="footer-wrapper">
               <div class="container">
-                <div class="footer-nav">
+                <nav class="footer-nav">
                   <div class="list">
                     <h2>PRODUCT CATEGORIES</h2>
                     <ul>
@@ -301,7 +313,7 @@
                       <li><a href="#">Enterprise</a></li>
                     </ul>
                   </div>
-              </div>
+              </nav>
               <div class="social-box">
                 <div class="social-items">
                   <div class="feedback-wrapper">
