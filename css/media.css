@@ -127,4 +127,12 @@
   .nav-menu .btn-login{
     margin-right: 60px;
   }
+  body .btn:hover{
+    background-color: #fb3864;
+    
+  }
+  body .btn-b:hover{
+    background-color: #08a6e4;
+  }
+  
 }
