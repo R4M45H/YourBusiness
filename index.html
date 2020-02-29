@@ -2,21 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <title>Your Business</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/60d7c3d814.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    
     <!-- Header -->
-    <header class="home screen" id="home">
+    <header class="home" id="home">
       <div class="container">
         <nav class="nav-menu" id="menu">
-          <a href="#"><img src="images/logo.svg" alt="logo"/></a>
+          <a href="#"><img src="images/logo.svg" alt="logo"></a>
           <ul class="menu">
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
@@ -26,26 +29,29 @@
             <li><a href="#contact">contact</a></li>
             <a href="#"><i class="fas fa-search"></i></a>
           </ul>
-          <a href="#" class="btn btn-login">Signup / Login</a>
+          <a href="#" class="btn btn-login">Signup/ Login</a>
         </nav>
+      
         <div class="home-content">
-          <h1>It's All About Promoting Your Business</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud
-          </p>
-          <a href="#" class="btn">Download app</a>
-          <a href="#" class="btn btn-b">Discover More</a>
-          <img class="phones" src="images/phones1.png" alt="phones" />
-          <img class="elips" src="images/elips.png" alt="circle" />
-        </div>
+          <img class="elips" src="images/elips.png" alt="circle" width="30%">
+          <div class="home-content__text">
+            <h1>It's All About Promoting Your Business</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud
+            </p>
+            <a href="#" class="btn">Download app</a>
+            <a href="#" class="btn btn-b">Discover More</a>
+          </div>
+          <img class="phones" src="images/phones1.png" alt="phones" width="45%">
       </div>
+    </div>
     </header>
 
     <main>
       <!-- About-->
-      <section class="about screen" id="about">
+      <section class="about" id="about">
         <h2 class="page-title">About</h2>
         <p class="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -63,20 +69,20 @@
             consectetur adipisicing elit, sed
           </p>
           <a href="#" class="btn">Read More</a>
-          <img src="images/about.png" alt="picture" />
-          <img src="images/elips.png" alt="elips" />
+          <img src="images/about.png" alt="picture" width="35%"/>
+          <img src="images/elips.png" alt="elips" width="40%"/>
         </div>
       </section>
 
       <!-- Banner -->
-      <aside class="banner-apps screen">
+      <aside class="banner-apps">
         <h2>Get The App Now</h2>
         <a href="#"><img src="images/download-btn1.png" alt="iOS btn"/></a>
         <a href="#"><img src="images/download-btn2.png" alt="Anroid btn"/></a>
       </aside>
 
       <!-- Showcase-->
-        <section class="showcase screen" id="showcase">
+        <section class="showcase" id="showcase">
           <div class="container">
             <h2 class="page-title">Showcase</h2>
             <p class="subtitle">
@@ -84,7 +90,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           
-          	<div class="slide hi-slide">
+          <!-- 	<div class="slide hi-slide">
               <div class="hi-prev "></div>
               <div class="hi-next "></div>
               <ul>
@@ -94,7 +100,40 @@
                 <li><img src="images/slide4.svg" alt="slide4"></li>
                 <li><img src="images/slide5.svg" alt="slide5"></li>
               </ul>
-            </div>  
+            </div>  --> 
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="images/slide2.svg" alt="slide2">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="images/slide5.svg" alt="slide2">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="images/slide3.svg" alt="slide3">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="images/slide2.svg" alt="slide4">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="images/slide5.svg" alt="slide5">
+                  </div>
+                </div>
+             
+              </div>
+               <!-- swiper-control -->
+               <div class="swiper-button-prev"><i class="fas fa-chevron-circle-left"></i></div>
+               <div class="swiper-button-next"><i class="fas fa-chevron-circle-right"></i></div>
+            </div>
           </section> 
 
       <!-- Features-->
@@ -344,12 +383,40 @@
         
             
           
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="js/jquery.hislide.min.js"></script>
-        <script src="js/jquery.hislide.js"></script>
-        <script>
-          $('.slide').hiSlide();
-        </script>
+      <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+      <!-- <script> $('.slide').hiSlide();</script> -->
+      <!-- <script src="js/jquery.hislide.min.js"></script>
+      <script src="js/jquery.hislide.js"></script> -->
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!-- Slick -->
+      <script src="js/swiper.min.js"></script> 
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          loop: true,
+          loopAdditionalSlides: 2,
+          loopedSlides: 7,
+          grabCursor: true,
+          centeredSlides: true,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 120,
+            depth: 20,
+            modifier: 5,
+            slideShadows : false,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          simulateTouch: false,
+        });
+        swiper.slideTo(2);
+      </script>
+      <!--file skripts -->
+      <script src="js/main.js"></script>  
+
       <!--Script for Scroll menu-->
       <script type="text/javascript">
         $(document).ready(function(){

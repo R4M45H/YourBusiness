@@ -1,0 +1,116 @@
+@media (max-width: 1680px) {
+  .home-content .elips {
+    max-width: 35%;
+    top: 50%;
+    left: -14%;
+  }
+}
+@media (max-width: 1450px) {
+ .container .home-content {
+    padding-bottom: 180px;
+  }
+  .home-content .home-content__text h1 {
+    font-size: 3.5em;
+  }
+  .home-content .elips {
+    max-width: 25%;
+    position: absolute;
+    top: 65%;
+    left: -12%;
+  }
+  section.about {
+   padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home .container{
+    width: 80%;
+  }
+  .container .home-content{
+    max-width: 1200px;
+  }
+  .nav-menu .menu {
+    margin-left: 100px;
+  }
+  .container .home-content {
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container .home-content {
+    padding-bottom: 40px;
+  }
+  .home-content .home-content__text h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  .home-content .home-content__text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .home-content .elips {
+    max-width: 25%;
+    top: 50%;
+    left: -12%;
+  }
+  body .btn{
+    font-size: 0.8em;
+    padding: 10px 26px;
+  }
+
+  /*------Showcase-----*/
+  /* .hi-slide li:nth-child(1),
+  .hi-slide li:nth-child(5){
+    width: 190px !important;
+  }
+  .showcase .hi-slide li:nth-child(2){
+    left: -50px ;
+  }
+  .hi-slide li:nth-child(2),
+  .hi-slide li:nth-child(4){
+    width: 230px !important;
+  }
+  .hi-slide li:nth-child(3){
+    width: 280px !important;
+  } */
+}
+
+@media (max-width: 768px) {
+  .container .home-content {
+    padding-bottom: 0px;
+  }
+  .home .container{
+    width: 80%;
+  }
+  .container .home-content{
+    max-width: 768px;
+  }
+  .container .nav-menu {
+    margin-bottom: 50px;
+  }
+  .nav-menu img{
+    width: 50px;
+  }
+  .nav-menu .menu {
+    margin-left: 20px;
+  }
+  .nav-menu .menu li {
+    font-size: 0.8em;
+    margin-right: 15px;
+  }
+  .home-content .home-content__text h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  .home-content .home-content__text p {
+    font-size: 0.9em;
+    margin-bottom: 0px;
+  }
+  .home-content .elips {
+    max-width: 35%;
+    top: 38%;
+    left: -12%;
+  }
+}
