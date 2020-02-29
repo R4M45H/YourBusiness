@@ -90,12 +90,11 @@ a:hover:not(.btn) {
   margin-bottom: 115px;
 }
 
-.menu {
+.menu{
   display: flex;
   text-transform: uppercase;
   margin-left: 400px;
 }
-
 .menu li {
   margin-right: 25px;
 }
@@ -103,6 +102,107 @@ a:hover:not(.btn) {
 .btn-login {
   padding: 11px 20px;
 }
+/*-----MENU-RESPONSIVE-------*/
+
+ .flex {
+	 min-height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .content {
+	 width: 100%;
+	 opacity: 0;
+	 height: 100vh;
+	 display: block;
+   position: absolute;
+   top: 0;
+	 right: 100%;
+	 transition: 0.5s;
+	 background-color: #fafafa;
+}
+ .content .navigation {
+	 list-style-type: none;
+	 padding-left: 0px;
+	 text-align: center;
+	 font-size: 2em;
+	 font-weight: bold;
+}
+ .content .navigation li {
+	 padding: 5px;
+}
+ .content .navigation a {
+	 color: #fb3864;
+   text-decoration: none;
+   text-transform: uppercase;
+	 position: relative;
+	 display: inline-block;
+	 overflow-x: hidden;
+	 transition: all 0.2s;
+}
+ .content .navigation a:before {
+	 content: '';
+	 overflow: hidden;
+	 width: 100%;
+	 position: absolute;
+	 left: -150%;
+	 bottom: 0px;
+	 height: 3px;
+	 background-color: #ff5757;
+	 transition: all 0.3s;
+}
+ .content .navigation a:hover:before {
+	 left: 0px;
+}
+ .show {
+	 right: 0px;
+	 opacity: 1;
+}
+ .hamburger {
+   display: none;
+   font-size: 0.6em;
+	 background-color: transparent;
+	 border: 0px;
+	 outline: 0px;
+	 width: 30px;
+	 height: 15px;
+	 position: absolute;
+	 top: 32px;
+	 right: 30px;
+	 cursor: pointer;
+	 z-index: 9999;
+}
+ .hamburger .burger {
+	 transition: all 0.3s;
+	 border-radius: 5px;
+	 height: 5px;
+	 width: 100%;
+	 display: inline-block;
+	 background-color: #fb3864;
+}
+ .focus .burger {
+	 transition: all 0.3s;
+}
+ .focus .burger:first-of-type {
+	 background-color: #08a6e4;
+	 transition-delay: 0.4s;
+	 transform: translate3d(0px, 0px, 0px) rotateZ(45deg);
+	 width: 40px;
+	 transform-origin: left top;
+}
+ .focus .burger:nth-of-type(2) {
+	 opacity: 0;
+}
+ .focus .burger:last-of-type {
+	 background-color: #08a6e4;;
+	 transition-delay: 0.4s;
+	 transform: translate3d(0px, 0px, 0px) rotateZ(-45deg);
+	 width: 40px;
+	 transform-origin: left bottom;
+}
+ 
+/*******RESPONSIVE-MENU - END******/
+
 
 .home-content {
   width: 100%;
