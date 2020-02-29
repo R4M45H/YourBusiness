@@ -19,7 +19,7 @@
     <header class="home" id="home">
       <div class="container">
         <nav class="nav-menu" id="menu">
-          <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
+          <a href="#"><img src="images/logo.svg" alt="logo"></a>
           <ul class="menu">
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
@@ -31,27 +31,7 @@
           </ul>
           <a href="#" class="btn btn-login">Signup/ Login</a>
         </nav>
-
-        <button id="button" class="hamburger">
-          <span class="burger"></span>
-          <span class="burger"></span>
-          <span class="burger"></span>
-      </button>
       
-      <div class="content">
-        <div class="flex">
-          <nav>
-            <ul id="links" class="navigation">
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#showcase">showcase</a></li>
-              <li><a href="#features">features</a></li>
-              <li><a href="#price">price</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
         <div class="home-content">
           <img class="elips" src="images/elips.png" alt="circle" width="30%">
           <div class="home-content__text">
@@ -400,12 +380,17 @@
             <p>@copy2018 Jenat.All Rights Reserved. Designed by jenat jo</p>
           </div>
         </footer>
-         
+        
+            
+          
+      <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+      <!-- <script> $('.slide').hiSlide();</script> -->
+      <!-- <script src="js/jquery.hislide.min.js"></script>
+      <script src="js/jquery.hislide.js"></script> -->
       <!-- jQuery -->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <!-- Slick -->
       <script src="js/swiper.min.js"></script> 
-      <script src="js/main.js"></script> 
       <script>
         var swiper = new Swiper('.swiper-container', {
           effect: 'coverflow',
@@ -429,11 +414,13 @@
         });
         swiper.slideTo(2);
       </script>
+      <!--file skripts -->
+      <script src="js/main.js"></script>  
 
       <!--Script for Scroll menu-->
-      <script>
+      <script type="text/javascript">
         $(document).ready(function(){
-        $("#menu, #links").on("click","a", function (event) {
+        $("#menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
         
