@@ -1,4 +1,4 @@
-$("button,nav").click(function() {
+$("button").click(function() {
   $(".hamburger").toggleClass("focus");
   $(".content").toggleClass("show");
 });
