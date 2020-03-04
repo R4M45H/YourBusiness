@@ -454,9 +454,6 @@
   }
 
   /*=======Showcase=======*/
-  .container > .subtitle {
-    margin-bottom: 0px;
-  }
   .showcase .swiper-slide {
     background-position: center;
     background-size: cover;
