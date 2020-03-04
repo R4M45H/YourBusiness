@@ -623,12 +623,19 @@
   }
 
   /*=======About=======*/
+  body .page-title {
+    padding-top: 30px;
+
+}
   section.about .subtitle {
     margin: 0 auto 20px;
     padding: 0px 10px;
   }
 
   /*=======Showcase =======*/
+  .container > .subtitle {
+    margin-bottom: 20px;
+}
   .showcase .swiper-container {
     width: 70%;
     min-height: 240px;
@@ -642,7 +649,7 @@
   .showcase .swiper-button-prev,
   .showcase .swiper-button-next {
     font-size: 2em;
-    top: 77%;
+    top: 78%;
   }
   .showcase .swiper-button-prev {
     left: 35%;
