@@ -393,6 +393,8 @@
   }
 }
 
+/*=======767px=======*/
+
 @media (max-width: 767px) {
   /*=======Header=======*/
   .home .container {
@@ -454,6 +456,13 @@
   }
 
   /*=======Showcase=======*/
+  .container > .subtitle {
+    margin-bottom: 0px;
+  }
+
+  .container > .swiper-container {
+    width: 90%;
+  }
   .showcase .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -463,7 +472,7 @@
   .showcase .swiper-button-prev,
   .showcase .swiper-button-next {
     font-size: 2.5em;
-    top: 80%;
+    top: 87%;
   }
   .showcase .swiper-button-prev {
     left: 37%;
@@ -625,7 +634,7 @@
     right: 35%;
   }
 
-   .contactus > .container > h2 {
+  .contactus > .container > h2 {
     margin-top: -100px;
   }
 
