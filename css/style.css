@@ -148,6 +148,10 @@ a:hover:not(.btn) {
   right: 0px;
   opacity: 1;
 }
+.hide {
+  right: 0px;
+  opacity: 0;
+}
 .hamburger {
   display: none;
   font-size: 0.6em;
@@ -818,6 +822,7 @@ textarea {
 
 .feedback .btn-subscribe {
   position: static;
+  -webkit-appearance: none; 
 }
 
 /*========Footer=======*/
@@ -861,7 +866,7 @@ textarea {
 }
 
 .social-box {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   align-items: flex-end;
   margin: 5px 0 80px 115px;
@@ -876,7 +881,6 @@ textarea {
   line-height: 1.8em;
   position: relative;
 }
-
 .feedback-item {
   display: flex;
   align-items: center;
