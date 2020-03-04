@@ -232,7 +232,7 @@
   /*=======Showcase=======*/
   body .page-title {
     font-size: 2.5em;
-    padding-top: 30px;
+    padding-top: 60px;
     margin-bottom: 0px;
   }
   .showcase .swiper-container {
@@ -502,6 +502,9 @@
   }
 
   /*=====Pricing-plan======*/
+  .container > .subtitle {
+    margin-bottom: 70px;
+  }
   section.pricing-plan {
     padding-bottom: 0px;
   }
@@ -560,8 +563,22 @@
     justify-content: center;
   }
   .container > .contactus-box h3 {
-    margin: 50px auto 0px;
+    margin: 0px auto 0px;
   }
+  .form-wrapper .feedback input[type="text"],
+  textarea {
+    font-size: 13px;
+    min-height: 20px;
+    padding: 5px 5px 5px 20px;
+    margin: 20px 0 16px 0;
+  }
+  .form-wrapper .feedback textarea {
+    font-size: 13px;
+    min-height: 100px;
+  }
+  .form-wrapper form.feedback {
+    min-height: 200px;
+}
 
   /*========Footer=======*/
   .footer-wrapper > .container {
