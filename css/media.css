@@ -44,8 +44,11 @@
     padding-bottom: 120px;
   }
 }
+
 /*=======1024px=======*/
+
 @media (max-width: 1024px) {
+  /*=======Header=======*/
   .container .home-content {
     padding-bottom: 40px;
   }
@@ -66,9 +69,84 @@
     font-size: 0.8em;
     padding: 10px 26px;
   }
+  .home-content .elips {
+    max-width: 35%;
+    top: 64%;
+    left: -16%;
+  }
+  /*=======About=======*/
+  section.about > .subtitle {
+    margin: 0 auto 100px;
+  }
+  .about .about-text {
+    max-width: 400px;
+    margin-left: 115px;
+  }
+  .about .container > img {
+    width: 40%;
+    right: 10px;
+    top: 250px;
+    position: absolute;
+  }
+  .about .btn-readmore {
+    margin-left: 115px;
+  }
+  .about .container > img + img {
+    right: -230px;
+    top: 220px;
+  }
+  /*=======Showcase=======*/
+  .showcase .subtitle {
+    margin-bottom: 0px;
+  }
+  .showcase .swiper-button-prev:hover {
+    color: #fb3864;
+  }
+  .showcase .swiper-button-next:hover {
+    color: #08a6e4;
+  }
+
+  /*========Features=======*/
+  .features .box-items {
+    justify-content: space-around;
+  }
+  /*========Pricing plan=======*/
+  .container > .box-items {
+    justify-content: space-around;
+  }
+  .box-items .card {
+    max-width: 300px;
+    min-height: 280px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+  }
+  .box-items .card > .btn {
+    left: calc(50% - 50px);
+    bottom: -20px;
+    position: absolute;
+  }
+
+  /*========Footer=======*/
+  .container > .footer-nav {
+    margin-left: 15px;
+  }
+  .feedback-item .fa-telegram-plane::before {
+    left: calc(50% - 119px);
+  }
+
+  .feedback-item .fa-envelope::before {
+    left: calc(50% - 117px);
+  }
+
+  .feedback-item .fa-phone-alt::before {
+    left: calc(50% - 117px);
+  }
 }
 
+/*=======768px=======*/
+
 @media (max-width: 768px) {
+  /*=======Header=======*/
   header.home {
     margin-bottom: 0;
   }
@@ -104,8 +182,20 @@
   }
   .home-content .elips {
     max-width: 35%;
-    top: 38%;
+    top: 30%;
     left: -12%;
+  }
+  .home-content .phones {
+    top: 13%;
+  }
+  body .btn:hover {
+    background-color: #fb3864;
+  }
+  body .btn-b:hover {
+    background-color: #08a6e4;
+  }
+  body .btn-g:hover {
+    background-color: #58ddaf;
   }
 
   /*=======About=======*/
@@ -117,7 +207,7 @@
   }
   section.about .subtitle {
     margin: 0 auto 50px;
-    padding: 0px 15px;
+    padding: 0px 30px;
   }
 
   .about .about-img {
@@ -129,12 +219,182 @@
     z-index: -1;
   }
   .about .about-text {
+    max-width: 600px;
+    min-height: 100px;
+    margin-left: 85px;
     font-size: 0.9em;
     margin-bottom: 0px;
+  }
+  .about .btn-readmore {
+    margin-left: 85px;
+  }
+
+  /*=======Showcase=======*/
+  body .page-title {
+    font-size: 2.5em;
+    padding-top: 30px;
+    margin-bottom: 0px;
+  }
+  .showcase .swiper-container {
+    width: 70%;
+    min-height: 300px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .showcase .swiper-button-prev,
+  .showcase .swiper-button-next {
+    font-size: 3.5em;
+    top: 85%;
+  }
+  .showcase .swiper-button-prev {
+    left: 40%;
+  }
+  .showcase .swiper-button-next {
+    right: 40%;
+  }
+
+  /*======Features=======*/
+  .features .subtitle {
+    margin-bottom: 10px;
+  }
+  .box-items .item {
+    padding: 20px 15px 20px 15px;
+    max-width: 320px;
+    min-height: 253px;
+  }
+  .box-items .item::after {
+    top: 93%;
+    bottom: 0;
+  }
+  .box-items .item:hover {
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  /*=====Pricing-plan======*/
+  .container > .box-items {
+    margin-bottom: 50px;
+  }
+  .pricing-plan .subtitle {
+    margin-bottom: 25px;
+  }
+  .box-items .card > p {
+    margin-bottom: 10px;
+  }
+  .box-items .card.red:hover,
+  .box-items .card.blue:hover,
+  .box-items .card.green:hover {
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  /*======Howitworks========*/
+  section.howitworks {
+    margin-bottom: 40px;
+  }
+  .container > .howitworks-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 450px;
+    margin-bottom: 0;
+  }
+  .howitworks-box .how {
+    position: static;
+    height: 200px;
+    max-width: 320px;
+    min-height: 150px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .howitworks img {
+    display: none;
+  }
+  .howitworks .subtitle {
+    margin-bottom: 15px;
+  }
+  .subscribe-wrapper .banner-subscribe::after {
+    display: none;
+  }
+  .howitworks-box .how-1:hover,
+  .howitworks-box .how-2:hover,
+  .howitworks-box .how-3:hover {
+    box-shadow: 0 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+
+  .howitworks-box .how h3 {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  .howitworks-box .how span {
+    top: calc(50% - 210px);
+    left: calc(50% - 220px);
+    position: absolute;
+  }
+
+  .howitworks-box .how-2 span {
+    top: calc(50% - 210px);
+    left: calc(50% + 140px);
+  }
+
+  .howitworks-box .how-3 span {
+    top: calc(50% + 15px);
+    left: calc(50% - 50px);
+  }
+
+  /*=======Subscribe=========*/
+  aside.banner-subscribe {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  div.subscribe-wrapper {
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+  }
+  .banner-subscribe .subtitle {
+    margin-bottom: 10px;
+  }
+  .banner-subscribe h2 {
+    font-size: 2.5em;
+    padding-top: 30px;
+    margin-bottom: 15px;
+  }
+  .container > form.subscribe {
+    min-height: 33px;
+    margin: 50px auto 0px;
+  }
+  .container > .subscribe .postemail {
+    min-height: 33px;
+    padding: 5px 110px 5px 20px;
+  }
+
+  /*========Contact Us=======*/
+
+  .container > .subtitle {
+    margin-bottom: 50px;
+  }
+  .form-wrapper .feedback input:focus,
+  .form-wrapper .feedback input:hover,
+  .form-wrapper .feedback textarea:focus,
+  .form-wrapper .feedback textarea:hover {
+    box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0);
+    outline: none;
+  }
+  /*========Footer=======*/
+  .container > .social-box {
+    margin: 5px 0 80px 75px;
+  }
+  .footer-nav .list {
+    margin-left: 30px;
+  }
+
+  body .scrollup {
+    right: 50px;
   }
 }
 
 @media (max-width: 767px) {
+  /*=======Header=======*/
   .home .container {
     width: 100%;
     max-width: 380px;
@@ -164,22 +424,19 @@
     margin-right: 60px;
   }
 
-  body .btn:hover {
-    background-color: #fb3864;
+  /*=======About=======*/
+  .about .about-text {
+    margin-bottom: 20px;
+    max-width: 350px;
+    margin-left: 0px;
   }
-  body .btn-b:hover {
-    background-color: #08a6e4;
+  .about .btn-readmore {
+    margin-left: 0px;
   }
-  body .btn-g:hover {
-    background-color: #58ddaf;
+  .about .about-img {
+    width: 215%;
+    left: -200px;
   }
-
-  body .page-title {
-    font-size: 2.5em;
-    padding-top: 10px;
-    margin-bottom: 0px;
-  }
-
   /*=======Banner-apps=======*/
 
   aside.banner-apps {
@@ -197,56 +454,137 @@
   }
 
   /*=======Showcase=======*/
-
-  .showcase .subtitle {
+  .container > .subtitle {
     margin-bottom: 0px;
   }
-
-  .showcase .swiper-container {
-    width: 70%;
-    min-height: 400px;
-    padding-top: 0px;
-    padding-bottom: 50px;
-  }
-
   .showcase .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 400px;
+    height: 280px;
   }
   .showcase .swiper-button-prev,
   .showcase .swiper-button-next {
-    font-size: 3em;
-    top: 85%;
+    font-size: 2.5em;
+    top: 80%;
   }
   .showcase .swiper-button-prev {
-    left: 40%;
+    left: 37%;
   }
   .showcase .swiper-button-next {
-    right: 40%;
+    right: 37%;
   }
 
-  .showcase .swiper-button-prev:hover {
-    color: #fb3864;
+  /*======Features=======*/
+  .box-items .item {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 25px 5px;
+    width: 100%;
+    max-width: 320px;
+    min-height: 150px;
   }
-  .showcase .swiper-button-next:hover {
-    color: #08a6e4;
+  .box-items .item h3,
+  .box-items .item img {
+    margin-bottom: 10px;
   }
-  /*======Howitworks========*/
-  .howitworks img {
-    display: none;
+
+  .box-items .item::after {
+    top: 90%;
+    bottom: 0;
   }
-  .howitworks .subtitle {
+
+  /*=====Pricing-plan======*/
+  section.pricing-plan {
+    padding-bottom: 50px;
+  }
+  .container > .box-items {
+    justify-content: center;
+  }
+  .box-items .card {
+    max-width: 210px;
+    min-height: 280px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+  }
+
+  .box-items .card > p {
+    margin-bottom: 10px;
+  }
+  .box-items .card > span {
+    font-size: 2.83em;
     margin-bottom: 15px;
   }
+  .box-items .card > ul > li {
+    font-size: 1.16em;
+    line-height: 1.92em;
+  }
+  .box-items .card > .btn {
+    left: calc(50% - 55px);
+    bottom: -18px;
+  }
+  .container > .box-items {
+    margin-bottom: 0px;
+  }
+  /*========How It Works=======*/
+  .howitworks-box .how {
+    margin-bottom: 30px;
+  }
+  .howitworks-box .how span {
+    top: calc(50% - 330px);
+    left: calc(50% - 40px);
+  }
+  .howitworks-box .how-2 span {
+    top: calc(50% - 100px);
+    left: calc(50% - 40px);
+  }
+  .howitworks-box .how-3 span {
+    top: calc(50% + 130px);
+    left: calc(50% - 40px);
+  }
 
-  .subscribe-wrapper .banner-subscribe::after {
-    display: none;
+  /*=======Banner subscribe=======*/
+  div.subscribe-wrapper {
+    min-height: 430px;
+  }
+  /*========Contact Us=======*/
+  .container > .contactus-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container > .contactus-box h3 {
+    margin: 50px auto 0px;
+  }
+
+  /*========Footer=======*/
+  .footer-wrapper > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-nav .list {
+    margin-left: 0px;
+  }
+  .container > .social-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+  }
+  .feedback-item .fa-telegram-plane::before,
+  .feedback-item .fa-phone-alt::before,
+  .feedback-item .fa-envelope::before {
+    left: calc(50% - 125px);
+  }
+  .feedback-wrapper > .social-icons {
+    margin: 25px 0px 30px 40px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
+  /*=======Header=======*/
   .container .home-content__text {
     padding-top: 10px;
   }
@@ -260,10 +598,14 @@
   .home .content .navigation {
     font-size: 1.7em;
   }
-  .about .about-img {
-    width: 210%;
-    left: -200px;
+
+  /*=======About=======*/
+  section.about .subtitle {
+    margin: 0 auto 20px;
+    padding: 0px 10px;
   }
+
+  /*=======Showcase =======*/
   .showcase .swiper-container {
     width: 70%;
     min-height: 240px;
@@ -286,142 +628,40 @@
     right: 35%;
   }
 
-  /*======FEATURES=======*/
-  .features .subtitle {
-    margin-bottom: 10px;
-  }
-  .box-items .item {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 25px 5px;
-    width: 100%;
-    max-width: 320px;
-    min-height: 150px;
-  }
-  .box-items .item h3,
-  .box-items .item img {
-    margin-bottom: 10px;
+   .contactus > .container > h2 {
+    margin-top: -100px;
   }
 
-  .box-items .item:hover {
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.329);
-  }
-  .box-items .item::after {
-    content: "";
-    max-width: 320px;
-    width: 98.3%;
-    height: 9px;
-    border-bottom: 9px solid #2929cc;
-    border-radius: 50px;
-    top: 90%;
-    bottom: 0;
-    position: absolute;
-  }
-
-  /*=====Pricing-plan======*/
-  section.pricing-plan {
-    padding-bottom: 50px;
-  }
-  .pricing-plan .subtitle {
-    margin-bottom: 25px;
-  }
-  .container > .box-items {
-    justify-content: center;
-  }
-  .box-items .card {
-    max-width: 210px;
-    min-height: 280px;
-    padding: 10px 10px;
-    margin-bottom: 40px;
-  }
-  .box-items .card > h3 {
-    margin-bottom: 10px;
-  }
-  .box-items .card > p {
-    margin-bottom: 10px;
-  }
-  .box-items .card > span {
-    font-size: 2.83em;
-    margin-bottom: 15px;
-  }
-  .box-items .card > ul > li {
-    font-size: 1.16em;
-    line-height: 1.92em;
-  }
-  .box-items .card > .btn {
-    left: calc(50% - 55px);
-    bottom: -18px;
-  }
-  .box-items .card.red:hover,
-  .box-items .card.blue:hover,
-  .box-items .card.green:hover {
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-  /*=======Howitworks======*/
-  section.howitworks {
-    margin-bottom: 30px;
-  }
-  .howitworks .howitworks-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-    min-height: 300px;
-  }
-
-  .howitworks .how {
-    max-width: 300px;
-    min-height: 150px;
-    padding: 10px 10px;
-    position: static;
-    margin-bottom: 30px;
-  }
-  .howitworks .how h3 {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .howitworks .how span {
-    top: calc(50% - 318px);
-    left: calc(50% - 45px);
-  }
-  .howitworks .how-2 span {
-    top: calc(50% - 104px);
-    left: calc(50% - 45px);
-  }
-  .howitworks .how-3 span {
-    top: calc(50% + 110px);
-    left: calc(50% - 45px);
-  }
-  /*=======Subscribe=========*/
-  aside.banner-subscribe {
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-  }
-
-  .banner-subscribe .subtitle {
-    margin-bottom: 10px;
-  }
-  .banner-subscribe h2 {
-    font-size: 2.5em;
+  footer .footer-wrapper {
     padding-top: 30px;
-    margin-bottom: 15px;
+    min-height: 325px;
   }
-  .container > form.subscribe {
-    width: 100%;
-    max-width: 537px;
-    min-height: 25px;
-    border-radius: 50px;
-    margin: 50px auto 0px;
+  .container > .footer-nav {
+    padding-top: 0;
+    font-size: 0.9em;
+    min-height: 170px;
   }
-  .container > .subscribe .postemail {
-    min-height: 33px;
-    padding: 5px 110px 5px 20px;
-    border-radius: 50px;
-    max-width: 375px;
-    border: 0;
-    outline: none;
+  .container > .footer-nav h2 {
+    font-size: 1em;
+    line-height: 2.31em;
+    font-weight: 600;
+    text-transform: uppercase;
   }
-  /*========Contact Us=======*/
+  .container > .footer-nav li {
+    font-size: 0.9em;
+  }
+  .feedback-item a {
+    font-size: 0.9em;
+  }
+  .feedback-item .fa-telegram-plane::before,
+  .feedback-item .fa-envelope::before,
+  .feedback-item .fa-phone-alt::before {
+    left: calc(50% - 115px);
+  }
+  .feedback-wrapper > .social-icons {
+    margin: 25px 0px 30px 40px;
+  }
+  footer .copyriting p {
+    font-size: 0.8em;
+  }
 }
