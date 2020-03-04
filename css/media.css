@@ -403,7 +403,7 @@
     font-size: 0.9em;
   }
   .footer-nav .list {
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   body .scrollup {
@@ -695,6 +695,7 @@
   }
 
   .container > .footer-nav {
+    margin-left: 0px;
     padding-top: 0;
     font-size: 0.9em;
     min-height: 170px;
@@ -714,7 +715,7 @@
   .feedback-item .fa-telegram-plane::before,
   .feedback-item .fa-envelope::before,
   .feedback-item .fa-phone-alt::before {
-    left: calc(50% - 115px);
+    left: calc(50% - 105px);
   }
   .feedback-wrapper > .social-icons {
     margin: 25px 0px 30px 40px;
