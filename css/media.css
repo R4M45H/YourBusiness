@@ -65,15 +65,13 @@
     top: 55%;
     left: -12%;
   }
-  body .btn {
-    font-size: 0.8em;
-    padding: 10px 26px;
-  }
+ 
   .home-content .elips {
     max-width: 35%;
     top: 64%;
     left: -16%;
   }
+
   /*=======About=======*/
   section.about > .subtitle {
     margin: 0 auto 100px;
@@ -99,12 +97,7 @@
   .showcase .subtitle {
     margin-bottom: 0px;
   }
-  .showcase .swiper-button-prev:hover {
-    color: #fb3864;
-  }
-  .showcase .swiper-button-next:hover {
-    color: #08a6e4;
-  }
+
 
   /*========Features=======*/
   .features .box-items {
@@ -121,10 +114,13 @@
     margin-bottom: 40px;
   }
   .box-items .card > .btn {
-    left: calc(50% - 50px);
+    left: calc(50% - 65px);
     bottom: -20px;
     position: absolute;
   }
+ 
+  
+  
 
   /*========Footer=======*/
   .container > .footer-nav {
@@ -146,6 +142,11 @@
 /*=======768px=======*/
 
 @media (max-width: 768px) {
+  body .btn {
+    font-size: 0.8em;
+    padding: 10px 26px;
+  }
+  
   /*=======Header=======*/
   header.home {
     margin-bottom: 0;
@@ -235,6 +236,9 @@
     padding-top: 60px;
     margin-bottom: 0px;
   }
+  .showcase >.container > .subtitle {
+    margin-bottom: 0px;
+}
   .showcase .swiper-container {
     width: 70%;
     min-height: 300px;
@@ -252,7 +256,12 @@
   .showcase .swiper-button-next {
     right: 40%;
   }
-
+  .showcase .swiper-button-prev:hover {
+    color: #fb3864;
+  }
+  .showcase .swiper-button-next:hover {
+    color: #08a6e4;
+  }
   /*======Features=======*/
   .features .subtitle {
     margin-bottom: 10px;
@@ -285,7 +294,6 @@
   .box-items .card.green:hover {
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
   }
-
   /*======Howitworks========*/
   section.howitworks {
     margin-bottom: 40px;
