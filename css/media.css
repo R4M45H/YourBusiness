@@ -290,6 +290,14 @@
   .box-items .card.green:hover {
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
   }
+  .box-items .btn.btn-shadowred:hover,
+  .box-items .btn.btn-shadowblue:hover,
+  .box-items .btn.btn-shadowgreen:hover  {
+    box-shadow: 0 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  .box-items .btn.btn-g:hover {
+    background-color: #58ddaf;
+}
   /*======Howitworks========*/
   section.howitworks {
     margin-bottom: 40px;
@@ -408,6 +416,11 @@
 
   body .scrollup {
     right: 50px;
+  }
+  .container > .footer-nav a:hover,
+  .feedback-item > .social a:hover,
+  .feedback-wrapper > .social-icons a:hover {
+    color: #fff;
   }
 }
 
@@ -611,6 +624,7 @@
     width: 100%;
     max-width: 380px;
     min-height: 150px;
+    margin-left: 0px;
   }
   .footer-nav .list {
     margin-left: 0px;
@@ -695,16 +709,12 @@
   }
 
   .container > .footer-nav {
-    margin-left: 0px;
     padding-top: 0;
     font-size: 0.9em;
     min-height: 170px;
   }
   .container > .footer-nav h2 {
     font-size: 1em;
-    line-height: 2.31em;
-    font-weight: 600;
-    text-transform: uppercase;
   }
   .container > .footer-nav li {
     font-size: 0.8em;
