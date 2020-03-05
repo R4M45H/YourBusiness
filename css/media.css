@@ -1,18 +1,18 @@
-/*=======1680px=======*/
+/*=======1680px(1659x881)=======*/
 
 @media (max-width: 1680px) {
   .home-content .elips {
     max-width: 35%;
-    top: 50%;
+    top: 60%;
     left: -14%;
   }
 }
 
-/*=======1450px=======*/
+/*=======1450px(1419x731)=======*/
 
 @media (max-width: 1450px) {
   .container .home-content {
-    padding-bottom: 180px;
+    padding-bottom: 0px;
   }
   .home-content .home-content__text h1 {
     font-size: 3.5em;
@@ -20,37 +20,44 @@
   .home-content .elips {
     max-width: 25%;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: -12%;
   }
   section.about {
     padding-bottom: 150px;
   }
+  section.about > .subtitle {
+    margin: 0 auto 200px;
+}
 }
 
-/*=======1200px=======*/
+/*=======1280px(1259x855)=======*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .home .container {
     width: 80%;
   }
   .container .home-content {
     max-width: 1200px;
   }
+  .home-content .elips {
+    top: 72%;
+  }
+  .home-content .phones {
+    width: 49%;
+    left: 51%;
+  }
   .nav-menu .menu {
     margin-left: 100px;
   }
-  .container .home-content {
-    padding-bottom: 120px;
-  }
 }
 
-/*=======1024px=======*/
+/*=======1024px(1003x599)=======*/
 
 @media (max-width: 1024px) {
   /*=======Header=======*/
-  .container .home-content {
-    padding-bottom: 40px;
+  header.home {
+    padding-bottom: 100px;
   }
   .home-content .home-content__text h1 {
     font-size: 2.5em;
@@ -62,19 +69,16 @@
   }
   .home-content .elips {
     max-width: 25%;
-    top: 55%;
+    top: 80%;
     left: -12%;
   }
-
-  .home-content .elips {
-    max-width: 35%;
-    top: 64%;
-    left: -16%;
+  .home-content .phones {
+    width: 49%;
+    top: 30%;
   }
-
   /*=======About=======*/
   section.about > .subtitle {
-    margin: 0 auto 100px;
+    margin: 0 auto 80px;
   }
   .about .about-text {
     max-width: 400px;
@@ -145,13 +149,10 @@
 
   /*=======Header=======*/
   header.home {
-    margin-bottom: 0;
-  }
-  .container .home-content {
-    padding-bottom: 0px;
+   padding-bottom: 30px;
   }
   .home .container {
-    width: 80%;
+    width: 90%;
   }
   .container .home-content {
     max-width: 768px;
@@ -175,15 +176,15 @@
   }
   .home-content .home-content__text p {
     font-size: 0.9em;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
   .home-content .elips {
-    max-width: 35%;
-    top: 30%;
+    max-width: 25%;
+    top: 37%;
     left: -12%;
   }
   .home-content .phones {
-    top: 13%;
+    top: 10%;
   }
   body .btn:hover {
     background-color: #fb3864;
@@ -196,11 +197,14 @@
   }
 
   /*=======About=======*/
+  .about > .container{
+    width: 90%;
+  }
   .about .container > img {
     display: none;
   }
   section.about {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   section.about .subtitle {
     margin: 0 auto 50px;
@@ -218,13 +222,13 @@
   .about .about-text {
     max-width: 600px;
     min-height: 100px;
-    margin-left: 85px;
     font-size: 0.9em;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+    margin-left: 0;
   }
   .about .btn-readmore {
-    margin-left: 85px;
-  }
+    margin-left: 0px;
+}
 
   /*=======Showcase=======*/
   body .page-title {
@@ -338,19 +342,19 @@
     position: relative;
   }
   .howitworks-box .how span {
-    top: calc(50% - 210px);
-    left: calc(50% - 220px);
+    top: calc(50% - 215px);
+    left: calc(50% - 200px);
     position: absolute;
   }
 
   .howitworks-box .how-2 span {
-    top: calc(50% - 210px);
-    left: calc(50% + 140px);
+    top: calc(50% - 215px);
+    left: calc(50% + 165px);
   }
 
   .howitworks-box .how-3 span {
     top: calc(50% + 15px);
-    left: calc(50% - 50px);
+    left: calc(50% - 20px);
   }
 
   /*=======Subscribe=========*/
@@ -424,9 +428,9 @@
   }
 }
 
-/*=======767px=======*/
+/*=======420px(420x640)=======*/
 
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   /*=======Header=======*/
   .home .container {
     width: 100%;
@@ -452,6 +456,13 @@
   }
   .container > .hamburger {
     display: block;
+  }
+
+   .container > .content {
+    height: 50%;
+    min-height: 360px;
+    max-height: 370px;
+ 
   }
   .nav-menu .btn-login {
     margin-right: 60px;
@@ -573,15 +584,15 @@
   }
   .howitworks-box .how span {
     top: calc(50% - 330px);
-    left: calc(50% - 40px);
+    left: calc(50% - 15px);
   }
   .howitworks-box .how-2 span {
     top: calc(50% - 100px);
-    left: calc(50% - 40px);
+    left: calc(50% - 15px);
   }
   .howitworks-box .how-3 span {
     top: calc(50% + 130px);
-    left: calc(50% - 40px);
+    left: calc(50% - 15px);
   }
 
   /*=======Banner subscribe=======*/
@@ -637,8 +648,15 @@
   .feedback-item .fa-telegram-plane::before,
   .feedback-item .fa-phone-alt::before,
   .feedback-item .fa-envelope::before {
-    left: calc(50% - 106px);
+    top: calc(50% - 10px);
+    left: calc(50% - 104px);
   }
+  .feedback-wrapper > .feedback-item i {
+    font-size: 1.4em;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
   .feedback-wrapper > .social-icons {
     margin: 25px 0px 30px 25px;
   }
@@ -653,6 +671,7 @@
   }
 }
 
+/*=======320-375px(320x568 & 375x667)=======*/
 @media (min-width: 320px) and (max-width: 375px) {
   /*=======Header=======*/
   .container .home-content__text {
@@ -667,6 +686,11 @@
   }
   .home .content .navigation {
     font-size: 1.7em;
+  }
+  .container > .content {
+    height: 55%;
+    min-height: 370px;
+ 
   }
 
   /*=======About=======*/
