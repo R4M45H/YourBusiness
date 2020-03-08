@@ -509,11 +509,11 @@
 
 @media (max-width: 735px) {
   .home-content .elips {
-    top: 95%;
+    top: 105%;
     left: -12%;
   }
   .home-content .phones {
-    top: 25%;
+    top: 30%;
   }
   /*section.showcase{
     padding-bottom: 20px;
