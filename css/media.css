@@ -505,9 +505,36 @@
     color: #fff;
   }
 }
+/*=======735=======*/
 
-/*=======420px(420x640)=======*/
+@media (max-width: 735px) {
+  .home-content .elips {
+    top: 95%;
+    left: -12%;
+  }
+  .home-content .phones {
+    top: 25%;
+  }
+  /*section.showcase{
+    padding-bottom: 20px;
+  }
+  .showcase .swiper-container {
+    min-height: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .showcase .swiper-button-prev,
+  .showcase .swiper-button-next {
+    font-size: 2.5em;
+    top: 90%;
+  }
+  .showcase .swiper-slide {
+    height: 270px;
+    padding-bottom: 30px;
+  }
+} */
 
+/*=======420px(420x640)   412x732(oneplus3t)=======*/
 @media (max-width: 420px) {
   body .container {
     max-width: 420px;
@@ -584,9 +611,6 @@
     width: 90%;
   }
   .showcase .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
     height: 280px;
   }
   .showcase .swiper-button-prev,
