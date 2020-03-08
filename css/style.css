@@ -74,6 +74,21 @@ a:hover:not(.btn) {
   margin: 0 auto;
 }
 
+.page-title  {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1.52em;
+  color: #000;
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 15px;
+}
+.subtitle {
+  text-align: center;
+  max-width: 536px;
+  min-height: 50px;
+  margin: 0 auto 50px;
+}
 /*=======Header=======*/
 
 .home {
@@ -131,7 +146,6 @@ a:hover:not(.btn) {
   font-size: 2em;
 }
 .content .navigation li {
-  
   padding: 10px;
 }
 .content .navigation a {
@@ -252,31 +266,12 @@ a:hover:not(.btn) {
   height: 100%;
   position: relative;
   overflow: hidden;
-  padding-bottom: 300px;
-}
-
-.page-title {
-  font-size: 3em;
-  font-weight: 600;
-  line-height: 1.52em;
-  color: #000;
-  text-align: center;
-  padding-top: 75px;
-  margin-bottom: 15px;
+  padding-bottom: 250px;
 }
 .about-img {
   display: none;
 }
-.subtitle {
-  text-align: center;
-  max-width: 536px;
-  min-height: 50px;
-  margin: 0 auto;
-}
 
-.about > .subtitle {
-  margin: 0 auto 257px;
-}
 
 .about-text {
   font-size: 1.16em;
@@ -284,7 +279,7 @@ a:hover:not(.btn) {
   width: 100%;
   max-width: 540px;
   min-height: 200px;
-  margin-bottom: 30px;
+  margin: 257px 0 30px;
 }
 
 .container > img {
@@ -327,11 +322,8 @@ a:hover:not(.btn) {
   box-shadow: 0 0 20px 1px white;
 }
 
-/*=======Showcase=======*/ 
+/*=======Showcase=======*/
 
-.subtitle {
-  margin-bottom: 100px;
-}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -392,10 +384,6 @@ a:hover:not(.btn) {
   padding-bottom: 100px;
 }
 
-.features > .subtitle {
-  margin-bottom: 10px;
-}
-
 .box-items {
   width: 100%;
   max-width: 1170px;
@@ -413,7 +401,7 @@ a:hover:not(.btn) {
   justify-content: center;
   align-items: center;
 
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 30px 27px 37px 28px;
 
   background-color: #fff;
@@ -475,15 +463,19 @@ a:hover:not(.btn) {
 }
 
 /*========Pricing plan=======*/
-
-.Pricing-plan > .box-items {
+.pricing-plan{
+  padding-bottom: 100px;
+}
+.pricing-plan > .box-items {
   width: 100%;
   max-width: 1170px;
   min-height: 460px;
   margin: 80px auto 200px;
+  
 
   display: flex;
   justify-content: space-between;
+  
 }
 
 .card {
@@ -589,27 +581,26 @@ li > i.red {
 
 /*========How It Works=======*/
 .howitworks {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .howitworks-box {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1085px;
   min-height: 750px;
-  margin: 50px auto;
+  margin: 50px 0 50px 150px;
   position: relative;
 }
 
-.howitworks-box img + img {
-  top: calc(50% - 325px);
-  left: calc(50% - 485px);
-  position: absolute;
-
-  z-index: -1;
-}
-
 .how {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+}
+.how-text {
   width: 100%;
   max-width: 372px;
   min-height: 179px;
@@ -617,24 +608,39 @@ li > i.red {
   border: 1px solid #fb3864;
   background-color: #fff;
   border-radius: 20px;
-  position: absolute;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.how-1 {
+  align-self: start;
+}
+.how-2 {
+  align-self: center;
+  border: 1px solid #08a6e4;
+}
+.how-3 {
+  border: 1px solid #58ddaf;
 }
 
-.how h3 {
+.number {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+}
+.number h3 {
   font-size: 1.5em;
   font-weight: 700;
   margin: 20px auto 20px 0;
-  position: relative;
 }
-
-.how span {
+.number span {
   font-size: 4.91em;
   line-height: 1em;
   font-weight: 600;
   color: #fb3864;
   opacity: 0.3;
-  top: 12px;
-  left: calc(50% - 130px); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 .how-2 span {
@@ -642,24 +648,14 @@ li > i.red {
 }
 .how-3 span {
   color: #58ddaf;
- 
 }
 
-.how-1 {
-  right: 150px;
-  top: 40px;
-}
-
-.how-2 {
-  right: 20px;
-  top: calc(50% - 95px);
-  border: 1px solid #08a6e4;
-}
-
-.how-3 {
-  right: 150px;
-  bottom: 40px;
-  border: 1px solid #58ddaf;
+.circle {
+  max-width: 70%;
+  left: 5%;
+  top: 5%;
+  position: absolute;
+  z-index: -1;
 }
 
 .how-1:hover {
@@ -675,18 +671,25 @@ li > i.red {
 }
 
 /*=======Banner subscribe=======*/
+.banner-wrapper{
+  height: 100%;
+  min-height: 455px;
+  overflow: hidden;
+}
 .banner-subscribe {
   background: #13253b url(../images/bgbanner.jpg);
   color: #fff;
-  margin-bottom: 100px;
+  height: 100%;
+  min-height: 350px;
   position: relative;
   padding-bottom: 50px;
 }
 
-.subscribe-wrapper {
-  height: 100%;
-  min-height: 60vh;
-  overflow: hidden;
+img.ellips-small {
+  width: 20%;
+  top: 30%;
+  right: -10%;
+  position: absolute;
 }
 
 .banner-subscribe h2 {
@@ -730,21 +733,10 @@ form.subscribe {
   outline: none;
 }
 
-.banner-subscribe::after {
-  content: url(../images/bg-ellips-small.png);
-  width: 286px;
-  height: 286px;
-  right: -70px;
-  bottom: -50px;
-  position: absolute;
-  padding-bottom: 20px;
-}
-
 /*========Contact Us=======*/
-.contactus h2 {
-  margin-top: -120px;
+.contactus .page-title {
+  padding-top: 0;
 }
-
 .contactus-box {
   display: flex;
   justify-content: space-between;
@@ -774,7 +766,7 @@ form.feedback {
   max-width: 743px;
   min-height: 372px;
 }
-.name-email{
+.name-email {
   display: flex;
   justify-content: space-between;
 }
@@ -815,7 +807,7 @@ textarea {
 
 .feedback .btn-subscribe {
   position: static;
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
 }
 
 /*========Footer=======*/
@@ -859,7 +851,7 @@ textarea {
 }
 
 .social-box {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 5px 0 80px 115px;
@@ -900,21 +892,11 @@ textarea {
   border-radius: 50%;
 }
 
-.fa-telegram-plane::before {
-  top: calc(50% - 12px);
-  left: calc(50% - 125px);
-  position: absolute;
-}
-
-.fa-envelope::before {
+.fa-telegram-plane::before,
+.fa-envelope::before,
+.fa-phone-alt::before{
   top: calc(50% - 12px);
   left: calc(50% - 126px);
-  position: absolute;
-}
-
-.fa-phone-alt::before {
-  top: calc(50% - 12px);
-  left: calc(50% - 125px);
   position: absolute;
 }
 
