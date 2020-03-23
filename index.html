@@ -74,13 +74,14 @@
     <main>
       <!-- About-->
       <section class="about" id="about">
+        <div class="container">
         <h2 class="page-title">About</h2>
         <p class="subtitle">
           We create mobile applications, web services and super-ups 
           that increase customer loyalty and convert attention and user experience into money
         </p>
         <img class="about-img" src="images/about.jpg" alt="about" width="150%">
-        <div class="container">
+        
           <p class="about-text">
             We are developing applications for iOS and Android, including mobile devices and 
             tablet computers. We help your business to work even more efficiently, using 
@@ -93,6 +94,7 @@
           <a href="#" class="btn btn-readmore">Read More</a>
           <img src="images/about.png" alt="picture" width="35%"/>
           <img src="images/elips.png" alt="elips" width="40%"/>
+        </div>
         </div>
       </section>
 
@@ -255,53 +257,63 @@
                 stages, in the framework of which the following work is carried out 
                 in parallel.</p>
               <div class="howitworks-box">
-                <img src="images/howitworks1.svg" alt="phone1">
-                <img src="images/howitworks2.png" alt="elips2">
-                <div class="how how-1">
-                  <span>1</span>
-                  <h3>Preparatory</h3>
-                  <p>Drafting TOR for application development. Then - development of UX, 
-                    we prescribe user behavior scenarios, navigation schemes for the 
-                    application and functionality. Development of the "skeleton" of the 
-                    application and design development.
-                   </p>
-                </div>
-                <div class="how how-2">
-                  <span>2</span>
-                  <h3>Work Hard</h3>
-                  <p>Development of the main functionality of the application, development 
-                    of the server part and API (where information is stored and most often 
-                    processed) + testing. Training in the use of the server side. Implementation 
-                    of the design.</p>
-                </div>
-                <div class="how how-3">
-                  <span>3</span>
-                  <h3>Completion</h3>
-                  <p>Testing, bugfixing - the latest technical improvements.
-                    Delivery of the project to the client.
-                    Hosting apps on Google Play and the App Store is a major part of the promotion work. 
-                    If this is a B2B application, then this work block can be skipped. </p>
+                <img class="circle" src="images/howitworks2.png" alt="elips2" width="100%">
+                <img  src="images/howitworks1.svg" alt="phone1" width="30%">
+                <div class="how">
+                  <div class="how-text how-1">
+                    <div class="number">
+                      <span>1</span>
+                      <h3>Preparatory</h3>
+                    </div>
+                    <p>Drafting TOR for application development. Then - development of UX, 
+                      we prescribe user behavior scenarios, navigation schemes for the 
+                      application and functionality. Development of the "skeleton" of the 
+                      application and design development.
+                    </p>
+                  </div>
+                  <div class="how-text how-2">
+                    <div class="number">
+                      <span>2</span>
+                      <h3>Work Hard</h3>
+                    </div>
+                    <p>Development of the main functionality of the application, development 
+                      of the server part and API (where information is stored and most often 
+                      processed) + testing. Training in the use of the server side. Implementation 
+                      of the design.</p>
+                  </div>
+                  <div class="how-text how-3">
+                    <div class="number">
+                      <span>3</span>
+                      <h3>Completion</h3>
+                    </div>
+                    <p>Testing, bugfixing - the latest technical improvements.
+                      Delivery of the project to the client.
+                      Hosting apps on Google Play and the App Store is a major part of the promotion work. 
+                      If this is a B2B application, then this work block can be skipped. </p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
 
         <!-- Banner subscribe -->
-          <div class="subscribe-wrapper ">
+          <div class="banner-wrapper">
             <aside class="banner-subscribe">
-              <div class="container">
-                <h2 class="page-title">Subscribe For Our Newsletter</h2>
-                <p class="subtitle">We recommend that you subscribe to our mailing list to always be aware 
-                  of new hellish,  events, news, and much more. And also everyone who is subscribed to us 
-                  receives a bonus, which you will learn about after subscribing.</p>
-                <form class="subscribe" action="subscribe.php">
-                  <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
-                  <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
-                    formaction="handler.php" formmethod="post" ></p>
-                </form>
+                <div class="container">
+                  <h2 class="page-title">Subscribe For Our Newsletter</h2>
+                  <p class="subtitle">We recommend that you subscribe to our mailing list to always be aware 
+                    of new hellish,  events, news, and much more. And also everyone who is subscribed to us 
+                    receives a bonus, which you will learn about after subscribing.</p>
+                  <form class="subscribe" action="subscribe.php">
+                    <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
+                    <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
+                      formaction="handler.php" formmethod="post" ></p>
+                  </form>
+                  <img class="ellips-small" src="images/bg-ellips-small.png" alt="ellips-small">
                 </div>
             </aside>  
           </div>
+         
 
         <!--Contact Us-->
           <section class="contactus" id="contact">
