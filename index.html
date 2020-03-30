@@ -7,9 +7,10 @@
     <title>Your Business</title>
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/60d7c3d814.js" crossorigin="anonymous"></script>
   </head>
@@ -18,7 +19,7 @@
     <!-- Header -->
     <header class="home" id="home">
       <div class="container">
-        <nav class="nav-menu" id="menu">
+        <nav class="nav-menu wow fadeIn" data-wow-duration="2s" id="menu">
           <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
           <ul class="menu">
             <li><a href="#home">home</a></li>
@@ -53,8 +54,8 @@
         </div>
       </div>
         <div class="home-content">
-          <img class="elips" src="images/elips.png" alt="circle" width="30%">
-          <div class="home-content__text">
+          <img class="elips wow rotateInDownLeft" data-wow-delay="0.6s" src="images/elips.png" alt="circle" width="30%">
+          <div class="home-content__text wow bounceInDown" data-wow-delay="1.2s" data-wow-duration="1.2s">
             <h1>It's All About Promoting Your Business</h1>
             <p>
               Mobile application development is a fairly popular service in our company. 
@@ -66,7 +67,7 @@
             <a href="#" class="btn">Download app</a>
             <a href="#" class="btn btn-b">Discover More</a>
           </div>
-          <img class="phones" src="images/phones1.png" alt="phones" width="45%">
+          <img class="phones wow rotateInDownRight" data-wow-delay="0.6s" src="images/phones1.png" alt="phones" width="45%">
       </div>
     </div>
     </header>
@@ -75,131 +76,130 @@
       <!-- About-->
       <section class="about" id="about">
         <div class="container">
-        <h2 class="page-title">About</h2>
-        <p class="subtitle">
-          We create mobile applications, web services and super-ups 
-          that increase customer loyalty and convert attention and user experience into money
-        </p>
-        <img class="about-img" src="images/about.jpg" alt="about" width="150%">
-        
-          <p class="about-text">
-            We are developing applications for iOS and Android, including mobile devices and 
-            tablet computers. We help your business to work even more efficiently, using 
-            advanced technologies of the information age and offering exactly those solutions 
-            that reflect the specifics of your business. When developing applications, 
-            we will not only draw the functionality you claimed in the original attractive 
-            design, but also optimize the application in the best way, taking into account 
-            the features of your project.
+          <h2 class="page-title wow slideInDown" >About</h2>
+          <p class="subtitle wow slideInDown">
+            We create mobile applications, web services and super-ups 
+            that increase customer loyalty and convert attention and user experience into money
           </p>
-          <a href="#" class="btn btn-readmore">Read More</a>
-          <img src="images/about.png" alt="picture" width="35%"/>
-          <img src="images/elips.png" alt="elips" width="40%"/>
-        </div>
+          <img class="about-img" src="images/about.jpg" alt="about" width="150%">
+            
+            <p class="about-text wow bounceInDown" data-wow-delay="1.2s" data-wow-duration="1.2s">
+              We are developing applications for iOS and Android, including mobile devices and 
+              tablet computers. We help your business to work even more efficiently, using 
+              advanced technologies of the information age and offering exactly those solutions 
+              that reflect the specifics of your business. When developing applications, 
+              we will not only draw the functionality you claimed in the original attractive 
+              design, but also optimize the application in the best way, taking into account 
+              the features of your project.
+            </p>
+            <a href="#" class="btn btn-readmore wow fadeIn" data-wow-delay="2s" >Read More</a>
+            
+            <img class="wow fadeIn" data-wow-offset="300" data-wow-delay="2s" src="images/about.png" alt="picture" width="35%"/>
+            <img class="wow rotateInDownRight" data-wow-offset="300" data-wow-delay="1s" src="images/elips.png" alt="elips" width="40%"/>
         </div>
       </section>
 
       <!-- Banner -->
-      <aside class="banner-apps">
+      <aside class="banner-apps wow fadeInLeftBig" data-wow-offset="300">
         <h2>Get The App Now</h2>
-        <a href="#" ><img src="images/download-btn1.png" alt="iOS btn"/></a>
-        <a href="#" ><img src="images/download-btn2.png" alt="Anroid btn"/></a>
+        <a href="#" ><img src="images/download-btn1.png" alt="iOS btn"></a>
+        <a href="#" ><img src="images/download-btn2.png" alt="Anroid btn"></a>
       </aside>
 
       <!-- Showcase-->
-        <section class="showcase" id="showcase">
-          <div class="container">
-            <h2 class="page-title">Showcase</h2>
-            <p class="subtitle">
-              In the process of creating the application, 
-              you can clearly see how it will look on your smartphone.
-            </p>
-  
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="imgBx">
-                    <img src="images/slide2.svg" alt="slide2" width="100%">
-                  </div>
+      <section class="showcase" id="showcase">
+        <div class="container">
+          <h2 class="page-title">Showcase</h2>
+          <p class="subtitle">
+            In the process of creating the application, 
+            you can clearly see how it will look on your smartphone.
+          </p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="images/slide2.svg" alt="slide2" width="100%">
                 </div>
-                <div class="swiper-slide">
-                  <div class="imgBx">
-                    <img src="images/slide5.svg" alt="slide2" width="100%">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="imgBx">
-                    <img src="images/slide3.svg" alt="slide3" width="100%">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="imgBx">
-                    <img src="images/slide2.svg" alt="slide4" width="100%">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="imgBx">
-                    <img src="images/slide5.svg" alt="slide5" width="100%">
-                  </div>
-                </div>
-             
               </div>
-               <!-- swiper-control -->
-               <div class="swiper-button-prev"><i class="fas fa-chevron-circle-left"></i></div>
-               <div class="swiper-button-next"><i class="fas fa-chevron-circle-right"></i></div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="images/slide5.svg" alt="slide2" width="100%">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="images/slide3.svg" alt="slide3" width="100%">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="images/slide2.svg" alt="slide4" width="100%">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="images/slide5.svg" alt="slide5" width="100%">
+                </div>
+              </div>
             </div>
-          </section> 
+              <!-- swiper-control -->
+              <div class="swiper-button-prev"><i class="fas fa-chevron-circle-left"></i></div>
+              <div class="swiper-button-next"><i class="fas fa-chevron-circle-right"></i></div>
+          </div>
+        </div>
+      </section> 
 
       <!-- Features-->
-        <section class="features" id="features">   
-          <div class="container"> 
-          <h2 class="page-title">
-            Features
-          </h2>
-          <p class="subtitle">
-            Our team offers the creation of applications for Android. Working with us, you get 
-            the following benefits:
-          </p>
-          
-            <div class="box-items">
-              <div class="item">
-                <img src="images/brush.svg" alt="brush">
-                <h3>Special Design</h3>
-                <p>We have the best designers who know their job.
-                  We create a customized design for each application.</p>
-              </div>
-              <div class="item startup">
-                <img src="images/startup.svg" alt="startup">
-                <h3>Easy Boost</h3>
-                <p>Our application will bring rapid growth to your business. 
-                  In the first month you will see the result.</p>
-              </div>
-              <div class="item social">
-                <img src="images/social-care.svg" alt="social-care">
-                <h3>Active Support</h3>
-                <p>We keep in touch with our partners to ensure the functionality of their application.</p>
-              </div>
-              <div class="item medal">
-                <img src="images/medal.svg" alt="medal">
-                <h3>Premium Quality</h3>
-                <p>The quality of the class application we are developing is premium.</p>
-              </div>
-              <div class="item download">
-                <img src="images/download.svg" alt="download">
-                <h3>Simply Download</h3>
-                <p>Simple and affordable application download from anywhere in the world.</p>
-              </div>
-              <div class="item friend">
-                <img src="images/friend.svg" alt="fried">
-                <h3>User Friendly</h3>
-                <p>There is an opportunity to share your business successes with your friends.</p>
-              </div>
+      <section class="features" id="features">   
+        <div class="container"> 
+        <h2 class="page-title">
+          Features
+        </h2>
+        <p class="subtitle">
+          Our team offers the creation of applications for Android. Working with us, you get 
+          the following benefits:
+        </p>
+        
+          <div class="box-items">
+            <div class="item">
+              <img src="images/brush.svg" alt="brush">
+              <h3>Special Design</h3>
+              <p>We have the best designers who know their job.
+                We create a customized design for each application.</p>
+            </div>
+            <div class="item startup">
+              <img src="images/startup.svg" alt="startup">
+              <h3>Easy Boost</h3>
+              <p>Our application will bring rapid growth to your business. 
+                In the first month you will see the result.</p>
+            </div>
+            <div class="item social">
+              <img src="images/social-care.svg" alt="social-care">
+              <h3>Active Support</h3>
+              <p>We keep in touch with our partners to ensure the functionality of their application.</p>
+            </div>
+            <div class="item medal">
+              <img src="images/medal.svg" alt="medal">
+              <h3>Premium Quality</h3>
+              <p>The quality of the class application we are developing is premium.</p>
+            </div>
+            <div class="item download">
+              <img src="images/download.svg" alt="download">
+              <h3>Simply Download</h3>
+              <p>Simple and affordable application download from anywhere in the world.</p>
+            </div>
+            <div class="item friend">
+              <img src="images/friend.svg" alt="fried">
+              <h3>User Friendly</h3>
+              <p>There is an opportunity to share your business successes with your friends.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!--Pricing plan-->
-        <section class="pricing-plan" id="price"> 
-          <div class="container">
+      <!--Pricing plan-->
+      <section class="pricing-plan" id="price"> 
+        <div class="container">
           <h2 class="page-title">Pricing Plan</h2>
           <p class="subtitle">We value our customers, therefore, the company policy 
             adheres to the flexible cost of our services, which allows us to find the 
@@ -245,75 +245,75 @@
               <a href="#" class="btn btn-g btn-shadowgreen">Get started</a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!--How It Works-->
-          <section class="howitworks">
-            <div class="container">
-              <h2 class="page-title">How It Works</h2>
-              <p class="subtitle">At the same time, various tasks are performed 
-                that allow you to assemble a product ready for launch quickly and 
-                for a predetermined amount. The development is divided into three 
-                stages, in the framework of which the following work is carried out 
-                in parallel.</p>
-              <div class="howitworks-box">
-                <img class="circle" src="images/howitworks2.png" alt="elips2" width="100%">
-                <img  src="images/howitworks1.svg" alt="phone1" width="30%">
-                <div class="how">
-                  <div class="how-text how-1">
-                    <div class="number">
-                      <span>1</span>
-                      <h3>Preparatory</h3>
-                    </div>
-                    <p>Drafting TOR for application development. Then - development of UX, 
-                      we prescribe user behavior scenarios, navigation schemes for the 
-                      application and functionality. Development of the "skeleton" of the 
-                      application and design development.
-                    </p>
+      <!--How It Works-->
+        <section class="howitworks">
+          <div class="container">
+            <h2 class="page-title">How It Works</h2>
+            <p class="subtitle">At the same time, various tasks are performed 
+              that allow you to assemble a product ready for launch quickly and 
+              for a predetermined amount. The development is divided into three 
+              stages, in the framework of which the following work is carried out 
+              in parallel.</p>
+            <div class="howitworks-box">
+              <img class="circle" src="images/howitworks2.png" alt="elips2" width="100%">
+              <img  src="images/howitworks1.svg" alt="phone1" width="30%">
+              <div class="how">
+                <div class="how-text how-1">
+                  <div class="number">
+                    <span>1</span>
+                    <h3>Preparatory</h3>
                   </div>
-                  <div class="how-text how-2">
-                    <div class="number">
-                      <span>2</span>
-                      <h3>Work Hard</h3>
-                    </div>
-                    <p>Development of the main functionality of the application, development 
-                      of the server part and API (where information is stored and most often 
-                      processed) + testing. Training in the use of the server side. Implementation 
-                      of the design.</p>
+                  <p>Drafting TOR for application development. Then - development of UX, 
+                    we prescribe user behavior scenarios, navigation schemes for the 
+                    application and functionality. Development of the "skeleton" of the 
+                    application and design development.
+                  </p>
+                </div>
+                <div class="how-text how-2">
+                  <div class="number">
+                    <span>2</span>
+                    <h3>Work Hard</h3>
                   </div>
-                  <div class="how-text how-3">
-                    <div class="number">
-                      <span>3</span>
-                      <h3>Completion</h3>
-                    </div>
-                    <p>Testing, bugfixing - the latest technical improvements.
-                      Delivery of the project to the client.
-                      Hosting apps on Google Play and the App Store is a major part of the promotion work. 
-                      If this is a B2B application, then this work block can be skipped. </p>
+                  <p>Development of the main functionality of the application, development 
+                    of the server part and API (where information is stored and most often 
+                    processed) + testing. Training in the use of the server side. Implementation 
+                    of the design.</p>
+                </div>
+                <div class="how-text how-3">
+                  <div class="number">
+                    <span>3</span>
+                    <h3>Completion</h3>
                   </div>
+                  <p>Testing, bugfixing - the latest technical improvements.
+                    Delivery of the project to the client.
+                    Hosting apps on Google Play and the App Store is a major part of the promotion work. 
+                    If this is a B2B application, then this work block can be skipped. </p>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
         <!-- Banner subscribe -->
-          <div class="banner-wrapper">
-            <aside class="banner-subscribe">
-                <div class="container">
-                  <h2 class="page-title">Subscribe For Our Newsletter</h2>
-                  <p class="subtitle">We recommend that you subscribe to our mailing list to always be aware 
-                    of new hellish,  events, news, and much more. And also everyone who is subscribed to us 
-                    receives a bonus, which you will learn about after subscribing.</p>
-                  <form class="subscribe" action="subscribe.php">
-                    <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
-                    <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
-                      formaction="handler.php" formmethod="post" ></p>
-                  </form>
-                  <img class="ellips-small" src="images/bg-ellips-small.png" alt="ellips-small">
-                </div>
-            </aside>  
-          </div>
-         
+        <div class="banner-wrapper">
+          <aside class="banner-subscribe">
+              <div class="container">
+                <h2 class="page-title">Subscribe For Our Newsletter</h2>
+                <p class="subtitle">We recommend that you subscribe to our mailing list to always be aware 
+                  of new hellish,  events, news, and much more. And also everyone who is subscribed to us 
+                  receives a bonus, which you will learn about after subscribing.</p>
+                <form class="subscribe" action="subscribe.php">
+                  <p><input class="postemail" placeholder="Write Your Email Here" name="subscribe"></p>
+                  <p><input class="btn btn-subscribe" type="submit" value="Subscribe" 
+                    formaction="handler.php" formmethod="post" ></p>
+                </form>
+                <img class="ellips-small" src="images/bg-ellips-small.png" alt="ellips-small">
+              </div>
+          </aside>  
+        </div>
 
         <!--Contact Us-->
           <section class="contactus" id="contact">
@@ -324,7 +324,7 @@
               <div class="contactus-box">
                 <div class="text">
                   <h3 class="textarea-name">Any Queries?<br> Feel Free to Make a Call</h3>
-              </div>
+                </div>
                 <div class="form-wrapper">
                   <form class="feedback" action="contactus.php">
                     <div class="name-email">
@@ -341,83 +341,85 @@
           </section>
     </main>
   
-        <!---Footer--->
-          <footer>
-            <div class="footer-wrapper">
-              <div class="container">
-                <div class="footer-nav">
-                  <div class="list">
-                    <h2>SERVICES apps</h2>
-                    <ul>
-                      <li><a href="#">Development</a></li>
-                      <li><a href="#">Promotion</a></li>
-                      <li><a href="#">Redesign</a></li>
-                      <li><a href="#">Usability analisys</a></li>
-                    </ul>
+    <!---Footer--->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="footer-nav">
+            <div class="list">
+              <h2>SERVICES apps</h2>
+              <ul>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">Redesign</a></li>
+                <li><a href="#">Usability analisys</a></li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>ABOUT US</h2>
+              <ul>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Command</a></li>
+                <li><a href="#">Case Presentation</a></li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Support</h2>
+              <ul>
+                <li><a href="#">To contact us</a></li>
+                <li><a href="#">Work in our company</a></li>
+                <li><a href="#">Knowledge Center</a></li>
+                <li><a href="#">Legal information</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-box">
+            <div class="social-items">
+              <div class="feedback-wrapper">
+                <div class="feedback-item">
+                  <i class="fab fa-telegram-plane"></i>
+                  <div class="social adres">
+                  <a href="#">354 Spencer Underpass, South <br>
+                    niyahfort, IA 99896-3428</a> 
                   </div>
-                  <div class="list">
-                    <h2>ABOUT US</h2>
-                    <ul>
-                      <li><a href="#">Customers</a></li>
-                      <li><a href="#">Reviews</a></li>
-                      <li><a href="#">Command</a></li>
-                      <li><a href="#">Case Presentation</a></li>
-                    </ul>
+                </div>
+                <div class="feedback-item"> 
+                  <i class="far fa-envelope"></i>
+                  <div class="social email">
+                    <a href="mailto:muel.kimone@hotmail.com">muel.kimone@hotmail.com</a> <br>
+                    <a href="mailto:johnna.orsilly@yahoo.com">johnna.orsilly@yahoo.com</a>
                   </div>
-                  <div class="list">
-                    <h2>Support</h2>
-                    <ul>
-                      <li><a href="#">To contact us</a></li>
-                      <li><a href="#">Work in our company</a></li>
-                      <li><a href="#">Knowledge Center</a></li>
-                      <li><a href="#">Legal information</a></li>
-                    </ul>
+                </div>
+                <div class="feedback-item"> 
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="social phone">
+                    <a href="tel:2294696358">(229) 469-6358</a><br>
+                    <a href="tel:2263905707">(226) 390-5707</a>
                   </div>
-              </div>
-              <div class="social-box">
-                <div class="social-items">
-                  <div class="feedback-wrapper">
-                    <div class="feedback-item">
-                      <i class="fab fa-telegram-plane"></i>
-                      <div class="social adres">
-                      <a href="#">354 Spencer Underpass, South <br>
-                        niyahfort, IA 99896-3428</a> 
-                      </div>
-                    </div>
-                    <div class="feedback-item"> 
-                      <i class="far fa-envelope"></i>
-                      <div class="social email">
-                        <a href="mailto:muel.kimone@hotmail.com">muel.kimone@hotmail.com</a> <br>
-                        <a href="mailto:johnna.orsilly@yahoo.com">johnna.orsilly@yahoo.com</a>
-                      </div>
-                    </div>
-                    <div class="feedback-item"> 
-                      <i class="fas fa-phone-alt"></i>
-                      <div class="social phone">
-                        <a href="tel:2294696358">(229) 469-6358</a><br>
-                        <a href="tel:2263905707">(226) 390-5707</a>
-                      </div>
-                    </div>
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a> 
-                    <a href="#"><i class="fab fa-facebook-square"></i></a> 
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>     
-                    <a href="#"><i class="fab fa-instagram"></i></a> 
-                  </div>
+                </div>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a> 
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>     
+                  <a href="#"><i class="fab fa-instagram"></i></a> 
                 </div>
               </div>
             </div>
           </div>
-        <!---Copyriting--->  
-          <div class="copyriting">
-            <p>@copy2018 Jenat.All Rights Reserved. Designed by jenat jo</p>
-          </div>
-        </footer>
+        </div>
+      </div>
+      <!---Copyriting--->  
+      <div class="copyriting">
+        <p>@copy2018 Jenat.All Rights Reserved. Designed by jenat jo</p>
+      </div>
+    </footer>
          
       <!-- jQuery -->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <!-- Slick -->
       <script src="js/swiper.min.js"></script> 
+      <script src="js/wow.min.js"></script> 
       <script src="js/main.js"></script> 
       <script>
         var swiper = new Swiper('.swiper-container', {
